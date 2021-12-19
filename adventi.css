@@ -1,0 +1,18 @@
+/* 
+    Created on : 2021. dec. 17., 16:18:44
+    Author     : Sanyi
+*/
+body {
+    background-image: url("images/2048114-bigthumbnail_csillagos.png");
+    color: black;
+}
+#calendar {
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+}
+.ablak {
+    background-image: url("images/door_closed.svg");
+    background-size: cover;
+    text-align: center;
+    height: 100px;
+}
