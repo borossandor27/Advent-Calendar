@@ -2,17 +2,118 @@
     Created on : 2021. dec. 17., 16:18:44
     Author     : Sanyi
 */
+@import url('https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap');
+html, body {
+    margin: 0px;
+    padding: 0px;
+    font-size: 1.5vmax;
+    height: 100%;}
 body {
     background-image: url("images/2048114-bigthumbnail_csillagos.png");
     color: black;
+    font-family: Helvetica, sans-serif;
+}
+h1 {
+    text-align: center;
+    font-family: 'Imperial Script', cursive;
+    font-size: 8vmax;
+    font-stretch: extra-expanded;
+}
+
+h1 img {
+    height: 8vmax;
+    transform: rotate(240deg);
+}
+h1 img.jobb {
+    transform: rotate(60deg);
 }
 #calendar {
+    height: 100%;
     display: grid;
     grid-template-columns: repeat(6, auto);
+    grid-gap: 1vmin;
 }
 .ablak {
-    background-image: url("images/door_closed.svg");
     background-size: cover;
+    background-repeat:   no-repeat;
+    background-position: center center;     
     text-align: center;
     height: 100px;
+    padding: 3px 25%;
+}
+.nyitva {
+    background-image: url("images/door_opened.svg");
+}
+.csukva {
+    background-image: url("images/door_closed.svg");
+
+}
+.kozepre{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#button {
+    text-align: right;
+}
+.button {
+  text-decoration: none;
+  background-color: green;
+  color: #ccc;
+  padding: 8px 16px;
+  border: 1px solid #CCCCCC;
+  border-radius: 8px;
+  margin-right: 1vmax;
+}
+nav {
+    background-color: #333;
+    margin: 0px;
+    text-align: center;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+nav li {
+  float: left;
+}
+nav li a:hover {
+    background-color: green;
+}
+nav li a {
+  display: block;
+  padding: 8px;
+  text-decoration: none;
+  color: white;
+}
+
+form button, form input[type="file"] {
+    font-size: 1.5vmax;
+    padding: 0.7vmax 3vmax;
+    border-radius: 8px;
+    background-color: #333;
+    color: white;
+}
+#album {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+#album img {
+    height: auto;
+    padding: 0.5vmax;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin: 1vw;
+    width: 15vmax;
+    background-color: wheat;
+}
+#album img:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+footer {
+    clear: both;
 }
